@@ -18,63 +18,58 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <main class="main">
+      <section class="ratingStart container" id="ratingStart">
+        <div class="ratingStart__img">
+          <img src="assets/images/icon-star.svg" alt="" />
+        </div>
+        <h1 class="ratingStart__title">How did we do?</h1>
+        <p class="ratingStart__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratingStart__numbers">
+          <div class="ratingStart__numbers-item">
+            <div>1</div>
+          </div>
+          <div class="ratingStart__numbers-item">
+            <div>2</div>
+          </div>
+          <div class="ratingStart__numbers-item">
+            <div>3</div>
+          </div>
+          <div class="ratingStart__numbers-item">
+            <div>4</div>
+          </div>
+          <div class="ratingStart__numbers-item">
+            <div>5</div>
+          </div>
+        </div>
+        <div class="ratingStart__submit" id="submit">
+          <button>Submit</button>
+        </div>
+      </section>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="ratingEnd hidden" id="ratingEnd">
+        <div class="ratingEnd__img">
+          <img src="assets/images/illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="ratingEnd__selection">
+          <p>You Selected <span id="ratingEnd__number"></span> out of 5</p>
+        </div>
+
+        <h1 class="ratingEnd__title">Thank you!</h1>
+
+        <p class="ratingEnd__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
     <!-- Rating state start -->
-    <section class="ratingStart container" id="ratingStart">
-      <div class="ratingStart__img">
-        <img src="assets/images/icon-star.svg" alt="" />
-      </div>
-      <h1 class="ratingStart__title">How did we do?</h1>
-      <p class="ratingStart__description">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="ratingStart__numbers">
-        <div class="ratingStart__numbers-item">
-          <div>1</div>
-        </div>
-        <div class="ratingStart__numbers-item">
-          <div>2</div>
-        </div>
-        <div class="ratingStart__numbers-item">
-          <div>3</div>
-        </div>
-        <div class="ratingStart__numbers-item">
-          <div>4</div>
-        </div>
-        <div class="ratingStart__numbers-item">
-          <div>5</div>
-        </div>
-      </div>
-      <div class="ratingStart__submit" id="submit">
-        <button>Submit</button>
-      </div>
-    </section>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <section class="ratingEnd hidden" id="ratingEnd">
-      <div class="ratingEnd__img">
-        <img src="assets/images/illustration-thank-you.svg" alt="" />
-      </div>
-      <div class="ratingEnd__selection">
-        <p>You Selected <span id="ratingEnd__number"></span> out of 5</p>
-      </div>
-
-      <h1 class="ratingEnd__title">Thank you!</h1>
-
-      <p class="ratingEnd__description">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-    </section>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
 
     <script src="assets/js/main.js"></script>
   </body>
