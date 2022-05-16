@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Rating state start -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <section class="ratingStart container" id="ratingStart">
+      <div class="ratingStart__img">
+        <img src="assets/images/icon-star.svg" alt="" />
+      </div>
+      <h1 class="ratingStart__title">How did we do?</h1>
+      <p class="ratingStart__description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="ratingStart__numbers">
+        <div class="ratingStart__numbers-item">
+          <div>1</div>
+        </div>
+        <div class="ratingStart__numbers-item">
+          <div>2</div>
+        </div>
+        <div class="ratingStart__numbers-item">
+          <div>3</div>
+        </div>
+        <div class="ratingStart__numbers-item">
+          <div>4</div>
+        </div>
+        <div class="ratingStart__numbers-item">
+          <div>5</div>
+        </div>
+      </div>
+      <div class="ratingStart__submit" id="submit">
+        <button>Submit</button>
+      </div>
+    </section>
 
-  How did we do?
+    <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <!-- Thank you state start -->
+    <section class="ratingEnd hidden" id="ratingEnd">
+      <div class="ratingEnd__img">
+        <img src="assets/images/illustration-thank-you.svg" alt="" />
+      </div>
+      <div class="ratingEnd__selection">
+        <p>You Selected <span id="ratingEnd__number"></span> out of 5</p>
+      </div>
 
-  1 2 3 4 5
+      <h1 class="ratingEnd__title">Thank you!</h1>
 
-  Submit
+      <p class="ratingEnd__description">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </section>
 
-  <!-- Rating state end -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
